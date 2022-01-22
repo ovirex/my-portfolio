@@ -1,0 +1,4 @@
+.custom-navmenu .custom-menu li a.nuxt-link-exact-active,
+.custom-navmenu .custom-menu li a:hover {
+  text-decoration: underline;
+}
