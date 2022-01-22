@@ -1,7 +1,7 @@
 <template>
   <div class="row mb-5 align-items-center">
     <div class="col-md-12 col-lg-6 mb-4 mb-lg-0" data-aos="fade-up">
-      <h2>Hey, I'm Johan Stanworth</h2>
+      <h2>Hey, I'm Ovidio Pérez</h2>
       <p class="mb-0">
         Freelance Creative &amp; Professional Graphics Designer
       </p>
