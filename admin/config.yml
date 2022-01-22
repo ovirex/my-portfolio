@@ -1,0 +1,162 @@
+backend:
+  name: github
+  repo: ovirex/my-portfolio
+  branch: master
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dttbfql17
+    api_key: 211247722988129
+
+collections:
+  - name: 'projects'
+    label: 'Projects'
+    folder: 'content/projects'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - {
+          label: ID,
+          name: id,
+
+          # Default widget name
+          widget: ncw-id,
+
+          # <Optional> If `true`, add timestamp, i.e post-1588747959991-dnfuHvOhP
+          # This can be used to sort collection by creation time
+          timestamp: false,
+
+          # <Optional> Hide the widget from UI
+          # Beware: We literally add `display: none` to the DOM node wrapping the input. It will break if netlifyCMS's editor pane structure changes.
+          hidden: false,
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Short Descripcion',
+          name: 'short_description',
+          widget: 'string',
+        }
+      - { label: 'Long Description', name: 'long_description', widget: 'text' }
+      - {
+          label: 'Tags',
+          name: 'tags',
+          widget: 'select',
+          multiple: true,
+          min: 1,
+          max: 3,
+          options: ['Social Media Design', 'Web Design', 'Art Direction'],
+        }
+      - {
+          label: 'Thumbnail',
+          name: 'thumbnail',
+          widget: 'image',
+          allow_multiple: false,
+        }
+      - label: 'Project Images'
+        name: 'project_images'
+        widget: 'list'
+        fields:
+          - {
+              label: 'Title',
+              name: 'title',
+              widget: 'string',
+              required: true,
+              hint: 'The title that will be display above the group of images',
+            }
+          - {
+              label: 'Images',
+              name: 'images',
+              widget: 'image',
+              media_library: { config: { multiple: true } },
+              required: true,
+            }
+  - name: 'resume'
+    label: 'Resumes'
+    folder: 'content/resumes'
+    format: 'frontmatter'
+    create: false
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    identifier_field: title
+    editor:
+      preview: false
+    fields:
+      - { name: 'title', label: 'Title', widget: string, default: 'My Resumes' }
+      - label: 'Resumes'
+        name: 'resumes'
+        widget: 'list'
+        hint: 'The resumes you want to show in you about page'
+        fields:
+          - {
+              label: 'Button Text',
+              name: 'text',
+              widget: 'string',
+              required: true,
+              hint: 'The text that will be inside the button (example: download my resume)',
+            }
+          - {
+              label: 'Resume PDF',
+              name: 'resume_pdf',
+              widget: 'file',
+              media_library: { config: { multiple: false } },
+              required: true,
+            }
+  - name: 'about_info'
+    label: 'About Info'
+    folder: 'content/about_info'
+    format: 'frontmatter'
+    create: false
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - {
+          name: 'title',
+          label: 'Title',
+          widget: 'string',
+          default: 'A description about me',
+          hint: 'Do not change this',
+        }
+      - {
+          label: 'Profile Pic',
+          name: 'profile_pic',
+          widget: 'image',
+          allow_multiple: false,
+        }
+      - {
+          name: 'body',
+          label: 'Description About You',
+          widget: 'markdown',
+          hint: 'Each paragraph must be inside this tags: <p class="text-muted mb-4"></p>',
+        }
+  - name: 'global'
+    label: 'Global'
+    folder: 'content/global'
+    format: 'frontmatter'
+    create: false
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - {
+          name: 'title',
+          label: 'Title',
+          widget: 'string',
+          default: 'Global',
+          hint: 'Do not change this',
+        }
+      - {
+          label: 'Website logo',
+          name: 'logo',
+          widget: 'image',
+          allow_multiple: false,
+        }
+      - {
+          name: 'body',
+          label: 'Footer Description',
+          widget: 'markdown',
+          hint: 'The footer description',
+        }
