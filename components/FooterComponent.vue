@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-sm-6">
             <p class="mb-1">
-              &copy; Copyright MyPortfolio. All Rights Reserved
+              &copy; Copyright Ovidio Pérez. All Rights Reserved
             </p>
             <div class="credits">
               <!--
@@ -14,14 +14,21 @@
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=MyPortfolio
           -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              Designed by
+              <a href="https://bootstrapmade.com/" target="_blank"
+                >BootstrapMade</a
+              >
             </div>
           </div>
           <div class="col-sm-6 social text-md-end">
-            <a href="#"><span class="bi bi-twitter"></span></a>
-            <a href="#"><span class="bi bi-facebook"></span></a>
-            <a href="#"><span class="bi bi-instagram"></span></a>
-            <a href="#"><span class="bi bi-linkedin"></span></a>
+            <a href="https://github.com/ovirex" target="_blank"
+              ><span class="bi bi-github"></span
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ovidio-p%C3%A9rez-64558b164/"
+              target="_blank"
+              ><span class="bi bi-linkedin"></span
+            ></a>
           </div>
         </div>
       </div>
