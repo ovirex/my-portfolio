@@ -7,6 +7,7 @@
         class="burger"
         data-bs-toggle="collapse"
         data-bs-target="#main-navbar"
+        @click="openCloseBurgerButton"
       >
         <span></span>
       </a>
@@ -36,6 +37,10 @@ export default {
           hide: true,
         })
       }
+    },
+    openCloseBurgerButton() {
+      const burgerMenu = document.querySelector('.burger')
+      burgerMenu.classList.toggle('active')
     },
   },
 }
