@@ -22,12 +22,7 @@ collections:
     fields:
       - { name: id, label: ID, widget: uuid, hint: 'Do not edit this field' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - {
-          label: 'Short Descripcion',
-          name: 'short_description',
-          widget: 'text',
-        }
-      - { label: 'Long Description', name: 'long_description', widget: 'text' }
+      - { label: 'Description', name: 'description', widget: 'text' }
 
       - label: 'Technologies Used'
         name: 'tech'
