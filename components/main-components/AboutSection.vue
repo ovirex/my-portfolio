@@ -18,14 +18,14 @@
             <li class="mb-3">
               <div class="d-flex mb-1">
                 <strong>WordPress</strong>
-                <span class="ml-auto">80%</span>
+                <span class="ml-auto"></span>
               </div>
               <div class="progress custom-progress">
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  style="width: 80%"
-                  aria-valuenow="80"
+                  style="width: 100%"
+                  aria-valuenow="100"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -34,14 +34,14 @@
             <li class="mb-3">
               <div class="d-flex mb-1">
                 <strong>Photoshop</strong>
-                <span class="ml-auto">96%</span>
+                <span class="ml-auto"></span>
               </div>
               <div class="progress custom-progress">
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  style="width: 96%"
-                  aria-valuenow="96"
+                  style="width: 100%"
+                  aria-valuenow="100"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -50,14 +50,14 @@
             <li class="mb-3">
               <div class="d-flex mb-1">
                 <strong>HTML5/CSS3</strong>
-                <span class="ml-auto">99%</span>
+                <span class="ml-auto"></span>
               </div>
               <div class="progress custom-progress">
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  style="width: 99%"
-                  aria-valuenow="99"
+                  style="width: 100%"
+                  aria-valuenow="100"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -66,14 +66,14 @@
             <li class="mb-3">
               <div class="d-flex mb-1">
                 <strong>Veu</strong>
-                <span class="ml-auto">87%</span>
+                <span class="ml-auto"></span>
               </div>
               <div class="progress custom-progress">
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  style="width: 87%"
-                  aria-valuenow="87"
+                  style="width: 100%"
+                  aria-valuenow="100"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -82,14 +82,14 @@
             <li class="mb-3">
               <div class="d-flex mb-1">
                 <strong>Angular</strong>
-                <span class="ml-auto">85%</span>
+                <span class="ml-auto"></span>
               </div>
               <div class="progress custom-progress">
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  style="width: 85%"
-                  aria-valuenow="85"
+                  style="width: 100%"
+                  aria-valuenow="100"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
@@ -98,14 +98,14 @@
             <li class="mb-3">
               <div class="d-flex mb-1">
                 <strong>React</strong>
-                <span class="ml-auto">88%</span>
+                <span class="ml-auto"></span>
               </div>
               <div class="progress custom-progress">
                 <div
                   class="progress-bar"
                   role="progressbar"
-                  style="width: 88%"
-                  aria-valuenow="88"
+                  style="width: 100%"
+                  aria-valuenow="100"
                   aria-valuemin="0"
                   aria-valuemax="100"
                 ></div>
