@@ -10,6 +10,7 @@ media_library:
     api_key: 211247722988129
 
 collections:
+  # Projects Collection
   - name: 'projects'
     label: 'Projects'
     folder: 'content/projects'
@@ -19,36 +20,41 @@ collections:
     editor:
       preview: false
     fields:
-      - {
-          label: ID,
-          name: id,
-
-          # Default widget name
-          widget: ncw-id,
-
-          # <Optional> If `true`, add timestamp, i.e post-1588747959991-dnfuHvOhP
-          # This can be used to sort collection by creation time
-          timestamp: false,
-
-          # <Optional> Hide the widget from UI
-          # Beware: We literally add `display: none` to the DOM node wrapping the input. It will break if netlifyCMS's editor pane structure changes.
-          hidden: false,
-        }
+      - { name: id, label: ID, widget: uuid, hint: 'Do not edit this field' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
           label: 'Short Descripcion',
           name: 'short_description',
-          widget: 'string',
+          widget: 'text',
         }
       - { label: 'Long Description', name: 'long_description', widget: 'text' }
+
+      - label: 'Technologies Used'
+        name: 'tech'
+        hint: 'Techs or skills used for the development of this project'
+        widget: 'list'
+        fields:
+          - {
+              label: 'Name of the tech used',
+              name: 'text',
+              widget: 'string',
+              required: true,
+            }
+
+      - label: 'Project Tags'
+        name: 'project_tags'
+        widget: 'relation'
+        collection: 'projects_tags'
+        search_fields: ['tag']
+        value_field: 'tag'
+        multiple: true
+
+      - { label: 'Project Link', name: 'project_link', widget: 'string' }
       - {
-          label: 'Tags',
-          name: 'tags',
-          widget: 'select',
-          multiple: true,
-          min: 1,
-          max: 3,
-          options: ['Social Media Design', 'Web Design', 'Art Direction'],
+          label: 'Project Repo',
+          name: 'project_repo',
+          widget: 'string',
+          hint: 'The link to the repo',
         }
       - {
           label: 'Thumbnail',
@@ -56,29 +62,33 @@ collections:
           widget: 'image',
           allow_multiple: false,
         }
-      - label: 'Project Images'
-        name: 'project_images'
-        widget: 'list'
-        fields:
-          - {
-              label: 'Title',
-              name: 'title',
-              widget: 'string',
-              required: true,
-              hint: 'The title that will be display above the group of images',
-            }
-          - {
-              label: 'Images',
-              name: 'images',
-              widget: 'image',
-              media_library: { config: { multiple: true } },
-              required: true,
-            }
+      - {
+          label: 'Project Images',
+          name: 'project_images',
+          widget: 'image',
+          media_library: { config: { multiple: true } },
+          required: true,
+        }
+
+  # Projects Tags Collection
+  - name: 'projects_tags'
+    label: 'Projects Tags'
+    folder: 'content/projects_tags'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    identifier_field: 'tag'
+    editor:
+      preview: false
+    fields:
+      - { name: 'tag', label: 'Tag Name', widget: string }
+
+  # Resumes Collection
   - name: 'resume'
     label: 'Resumes'
     folder: 'content/resumes'
     format: 'frontmatter'
-    create: false
+    create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     identifier_field: title
     editor:
@@ -104,11 +114,26 @@ collections:
               media_library: { config: { multiple: false } },
               required: true,
             }
+
+  # Services Collection
+  - name: 'services'
+    label: 'My Services'
+    folder: 'content/services'
+    format: 'frontmatter'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { name: 'title', label: 'Service Title', widget: 'string' }
+      - { name: 'description', label: 'Service Description', widget: 'text' }
+
+  # About Info Collection
   - name: 'about_info'
     label: 'About Info'
     folder: 'content/about_info'
     format: 'frontmatter'
-    create: false
+    create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
@@ -117,26 +142,39 @@ collections:
           name: 'title',
           label: 'Title',
           widget: 'string',
-          default: 'A description about me',
+          default: 'Texts that will go in the about page',
           hint: 'Do not change this',
         }
+      - { name: 'summarize', label: 'Summarize', widget: 'text' }
       - {
           label: 'Profile Pic',
           name: 'profile_pic',
           widget: 'image',
           allow_multiple: false,
         }
+      - label: 'Your skills'
+        name: 'skills'
+        widget: 'list'
+        fields:
+          - {
+              label: 'Name of the skill',
+              name: 'text',
+              widget: 'string',
+              required: true,
+            }
       - {
           name: 'body',
           label: 'Description About You',
           widget: 'markdown',
           hint: 'Each paragraph must be inside this tags: <p class="text-muted mb-4"></p>',
         }
+
+  # Global Collection
   - name: 'global'
     label: 'Global'
     folder: 'content/global'
     format: 'frontmatter'
-    create: false
+    create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
