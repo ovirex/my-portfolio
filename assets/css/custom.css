@@ -2,3 +2,7 @@
 .custom-navmenu .custom-menu li a:hover {
   text-decoration: underline;
 }
+
+.custom-progress {
+  height: 0.1rem;
+}
