@@ -40,8 +40,8 @@ collections:
         name: 'project_tags'
         widget: 'relation'
         collection: 'projects_tags'
-        search_fields: ['tag']
-        value_field: 'tag'
+        search_fields: ['tags_list.*.tag']
+        value_field: 'tags_list.*.tag'
         multiple: true
 
       - { label: 'Project Link', name: 'project_link', widget: 'string' }
@@ -70,13 +70,18 @@ collections:
     label: 'Projects Tags'
     folder: 'content/projects_tags'
     format: 'frontmatter'
-    create: true
+    description: 'A list of the tags that can be assigned to the projects'
+    create: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    identifier_field: 'tag'
     editor:
       preview: false
     fields:
-      - { name: 'tag', label: 'Tag Name', widget: string }
+      - { name: 'title', label: 'Title', widget: 'string', default: 'My Tags' }
+      - name: 'tags_list'
+        label: 'Tags List'
+        widget: 'list'
+        fields:
+          - { name: 'tag', label: 'Tag Name', widget: string }
 
   # Resumes Collection
   - name: 'resume'
