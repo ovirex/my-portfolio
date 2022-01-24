@@ -13,16 +13,25 @@
     >
       <div id="filters" class="filters">
         <a href="#" data-filter="*" class="active">All</a>
-        <a href="#" data-filter=".web">Web</a>
-        <a href="#" data-filter=".design">Design</a>
-        <a href="#" data-filter=".branding">Branding</a>
-        <a href="#" data-filter=".photography">Photography</a>
+        <a
+          v-for="(tag, index) in options"
+          :key="index"
+          href="#"
+          :data-filter="`.${tag.toLowerCase()}`"
+          >{{ tag }}
+        </a>
       </div>
     </div>
   </div>
 </template>
 <script>
+/* eslint-disable vue/require-default-prop */
 export default {
   name: 'PortfolioOptions',
+  props: {
+    options: {
+      type: Array,
+    },
+  },
 }
 </script>

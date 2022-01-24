@@ -1,7 +1,7 @@
 <template>
   <section class="section site-portfolio">
     <div class="container">
-      <portfolio-options></portfolio-options>
+      <portfolio-options :options="projectsTags"></portfolio-options>
       <portfolio-grid></portfolio-grid>
     </div>
   </section>
@@ -17,7 +17,31 @@ export default {
     PortfolioOptions,
     PortfolioGrid,
   },
+  data() {
+    return {
+      projectsTags: [],
+    }
+  },
+  async fetch() {
+    try {
+      const contentProjectsTags = await this.$content('projects_tags')
+        .only(['tags_list'])
+        .fetch()
+
+      this.projectsTags = contentProjectsTags[0].tags_list.map((tagInfo) => {
+        return tagInfo.tag
+      })
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error(err)
+    }
+  },
   mounted() {
+    this.$nextTick(function () {
+      this.addIsotopeLayout()
+    })
+  },
+  updated() {
     this.$nextTick(function () {
       this.addIsotopeLayout()
     })
