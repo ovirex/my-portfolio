@@ -95,8 +95,8 @@ collections:
       preview: false
     fields:
       - { name: 'title', label: 'Title', widget: string, default: 'My Resumes' }
-      - label: 'Resumes'
-        name: 'resumes'
+      - label: 'Resumes List'
+        name: 'resumes_list'
         widget: 'list'
         hint: 'The resumes you want to show in you about page'
         fields:
