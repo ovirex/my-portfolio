@@ -5,49 +5,18 @@
     data-aos="fade-up"
     data-aos-delay="200"
   >
-    <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-      <NuxtLink to="works/1" class="item-wrap fancybox">
+    <div
+      v-for="(project, index) in projectsToShow"
+      :key="index"
+      class="item col-sm-6 col-md-4 col-lg-4 mb-4"
+      :class="addProjectTagsToClass(project.project_tags)"
+    >
+      <NuxtLink :to="'works/' + project.id" class="item-wrap fancybox">
         <div class="work-info">
-          <h3>Boxed Water</h3>
-          <span>Web</span>
+          <h3>{{ project.title }}</h3>
+          <span>{{ project.project_tags.join(', ') }}</span>
         </div>
-        <img class="img-fluid" src="~/assets/img/img_1.jpg" />
-      </NuxtLink>
-    </div>
-    <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-      <NuxtLink to="works/1" class="item-wrap fancybox">
-        <div class="work-info">
-          <h3>Boxed Water</h3>
-          <span>Web</span>
-        </div>
-        <img class="img-fluid" src="~/assets/img/img_1.jpg" />
-      </NuxtLink>
-    </div>
-    <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-      <NuxtLink to="works/1" class="item-wrap fancybox">
-        <div class="work-info">
-          <h3>Boxed Water</h3>
-          <span>Web</span>
-        </div>
-        <img class="img-fluid" src="~/assets/img/img_1.jpg" />
-      </NuxtLink>
-    </div>
-    <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-      <NuxtLink to="works/1" class="item-wrap fancybox">
-        <div class="work-info">
-          <h3>Boxed Water</h3>
-          <span>Web</span>
-        </div>
-        <img class="img-fluid" src="~/assets/img/img_1.jpg" />
-      </NuxtLink>
-    </div>
-    <div class="item wordpress col-sm-6 col-md-4 col-lg-4 mb-4">
-      <NuxtLink to="works/1" class="item-wrap fancybox">
-        <div class="work-info">
-          <h3>Boxed Water</h3>
-          <span>Web</span>
-        </div>
-        <img class="img-fluid" src="~/assets/img/img_1.jpg" />
+        <img class="img-fluid" :src="project.thumbnail" />
       </NuxtLink>
     </div>
   </div>
@@ -56,5 +25,16 @@
 <script>
 export default {
   name: 'PortfolioGrid',
+  props: {
+    // eslint-disable-next-line vue/require-default-prop
+    projectsToShow: {
+      type: Array,
+    },
+  },
+  methods: {
+    addProjectTagsToClass(tagsArray) {
+      return tagsArray.join(' ').toLowerCase()
+    },
+  },
 }
 </script>

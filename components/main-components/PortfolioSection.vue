@@ -2,7 +2,7 @@
   <section class="section site-portfolio">
     <div class="container">
       <portfolio-options :options="projectsTags"></portfolio-options>
-      <portfolio-grid></portfolio-grid>
+      <portfolio-grid :projects-to-show="projects"></portfolio-grid>
     </div>
   </section>
 </template>
@@ -19,6 +19,7 @@ export default {
   },
   data() {
     return {
+      projects: [],
       projectsTags: [],
     }
   },
@@ -31,6 +32,15 @@ export default {
       this.projectsTags = contentProjectsTags[0].tags_list.map((tagInfo) => {
         return tagInfo.tag
       })
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error(err)
+    }
+
+    try {
+      const contentProjects = await this.$content('projects').fetch()
+
+      this.projects = contentProjects
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error(err)
