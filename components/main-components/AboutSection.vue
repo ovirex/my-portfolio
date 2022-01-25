@@ -5,8 +5,8 @@
         <div class="col-md-6" data-aos="fade-up">
           <h2>About Me</h2>
           <p class="mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            necessitatibus incidunt ut officiis explicabo inventore.
+            Here I’m gonna tell you a little about me, the tech I’ve worked with
+            and why hiring me would be the best decision of your life. 😉
           </p>
         </div>
       </div>

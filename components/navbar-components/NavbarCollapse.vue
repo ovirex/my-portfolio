@@ -29,9 +29,9 @@
         <div class="col-md-4 d-none d-md-block">
           <h3>Hire Me</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            necessitatibus incidunt ut officiisexplicabo inventore. <br />
-            <a href="#">myemail@gmail.com</a>
+            If you like some of my projects. I would like to hear from you,
+            let’s talk. Send me an email on the
+            <NuxtLink to="/contact">contact page</NuxtLink>.
           </p>
         </div>
       </div>

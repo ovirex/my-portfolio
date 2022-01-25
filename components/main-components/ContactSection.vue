@@ -5,8 +5,8 @@
         <div class="col-md-6" data-aos="fade-up">
           <h2>Contact</h2>
           <p class="mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            necessitatibus incidunt ut officiis explicabo inventore.
+            Hi, did you like the projects I’ve been working on? If so, let me
+            know. You can contact me so we can work together.
           </p>
         </div>
       </div>
@@ -79,26 +79,6 @@
               </div>
             </div>
           </form>
-        </div>
-
-        <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
-          <ul class="list-unstyled">
-            <li class="mb-3">
-              <strong class="d-block mb-1">Address</strong>
-              <span
-                >203 Fake St. Mountain View, San Francisco, California,
-                USA</span
-              >
-            </li>
-            <li class="mb-3">
-              <strong class="d-block mb-1">Phone</strong>
-              <span>+1 232 3235 324</span>
-            </li>
-            <li class="mb-3">
-              <strong class="d-block mb-1">Email</strong>
-              <span>youremail@domain.com</span>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

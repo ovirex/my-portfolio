@@ -5,8 +5,8 @@
         <div class="col-md-6" data-aos="fade-up">
           <h2>My Services</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            necessitatibus incidunt ut officiis explicabo inventore.
+            Here you can see some of my skills and services that can be valuable
+            to you so I can help you achieve your business goals.
           </p>
         </div>
       </div>
