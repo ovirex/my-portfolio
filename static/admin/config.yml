@@ -9,6 +9,8 @@ media_library:
     cloud_name: dttbfql17
     api_key: 211247722988129
 
+publish_mode: editorial_workflow
+
 collections:
   # Projects Collection
   - name: 'projects'
@@ -22,7 +24,7 @@ collections:
     fields:
       - { name: id, label: ID, widget: uuid, hint: 'Do not edit this field' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Description', name: 'body', widget: 'markdown' }
 
       - label: 'Technologies Used'
         name: 'tech'
@@ -44,12 +46,18 @@ collections:
         value_field: 'tags_list.*.tag'
         multiple: true
 
-      - { label: 'Project Link', name: 'project_link', widget: 'string' }
+      - {
+          label: 'Project Link',
+          name: 'project_link',
+          widget: 'string',
+          required: false,
+        }
       - {
           label: 'Project Repo',
           name: 'project_repo',
           widget: 'string',
           hint: 'The link to the repo',
+          required: false,
         }
       - {
           label: 'Thumbnail',
