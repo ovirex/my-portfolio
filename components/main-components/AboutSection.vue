@@ -140,7 +140,16 @@
             Optio consectetur culpa nemo, fugit pariatur veniam voluptate
             laudantium rerum fuga dolor in maiores ea nisi voluptatibus. Minus?
           </p>
-          <p><a href="#" class="readmore">Download my CV</a></p>
+          <p>
+            <a
+              v-for="(resume, index) in resumesToShow"
+              :key="index"
+              :href="resume.resume_pdf"
+              class="readmore me-2"
+              target="blank"
+              >{{ resume.text }}</a
+            >
+          </p>
         </div>
       </div>
     </div>
@@ -149,5 +158,17 @@
 <script>
 export default {
   name: 'AboutSection',
+  data() {
+    return {
+      resumesToShow: [],
+    }
+  },
+  async fetch() {
+    const resumes = await this.$content('resumes')
+      .only(['resumes_list'])
+      .fetch()
+
+    this.resumesToShow = resumes[0].resumes_list
+  },
 }
 </script>
