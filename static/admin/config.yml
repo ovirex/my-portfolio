@@ -153,12 +153,12 @@ collections:
           default: 'Texts that will go in the about page',
           hint: 'Do not change this',
         }
-      - { name: 'summarize', label: 'Summarize', widget: 'text' }
       - {
           label: 'Profile Pic',
           name: 'profile_pic',
           widget: 'image',
           allow_multiple: false,
+          required: false,
         }
       - label: 'Your skills'
         name: 'skills'
