@@ -6,7 +6,7 @@
           <ul class="custom-menu">
             <li><NuxtLink to="/">Home</NuxtLink></li>
             <li><NuxtLink to="/about">About Me</NuxtLink></li>
-            <li><NuxtLink to="/services">Services</NuxtLink></li>
+            <!-- <li><NuxtLink to="/services">Services</NuxtLink></li> -->
             <li><NuxtLink to="/works">Works</NuxtLink></li>
             <li><NuxtLink to="/contact">Contact</NuxtLink></li>
           </ul>

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <services-section></services-section>
 </template>
 
@@ -11,3 +11,4 @@ export default {
   },
 }
 </script>
+-->
