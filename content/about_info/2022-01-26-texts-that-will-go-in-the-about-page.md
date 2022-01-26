@@ -4,6 +4,7 @@ skills:
   - text: HTML/CSS
   - text: SASS
   - text: Javascript
+  - text: Git
   - text: Vue.js
   - text: Nuxt.js
   - text: Node.js
