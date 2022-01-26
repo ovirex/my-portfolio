@@ -20,7 +20,7 @@ export default {
   name: 'NavbarMenu',
   watch: {
     $route(to, from) {
-      // this.hideNavbarOnRouteChange()
+      this.hideNavbarOnRouteChange()
     },
   },
   methods: {
@@ -36,6 +36,8 @@ export default {
         const bsCollapse = new bootstrap.Collapse(myCollapse, {
           hide: true,
         })
+
+        this.openCloseBurgerButton()
       }
     },
     openCloseBurgerButton() {
