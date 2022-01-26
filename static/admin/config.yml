@@ -170,12 +170,7 @@ collections:
               widget: 'string',
               required: true,
             }
-      - {
-          name: 'body',
-          label: 'Description About You',
-          widget: 'markdown',
-          hint: 'Each paragraph must be inside this tags: <p class="text-muted mb-4"></p>',
-        }
+      - { name: 'body', label: 'Description About You', widget: 'markdown' }
 
   # Global Collection
   - name: 'global'
