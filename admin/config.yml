@@ -9,6 +9,8 @@ media_library:
     cloud_name: dttbfql17
     api_key: 211247722988129
 
+publish_mode: editorial_workflow
+
 collections:
   # Projects Collection
   - name: 'projects'
@@ -22,7 +24,7 @@ collections:
     fields:
       - { name: id, label: ID, widget: uuid, hint: 'Do not edit this field' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Description', name: 'body', widget: 'markdown' }
 
       - label: 'Technologies Used'
         name: 'tech'
@@ -40,16 +42,22 @@ collections:
         name: 'project_tags'
         widget: 'relation'
         collection: 'projects_tags'
-        search_fields: ['tag']
-        value_field: 'tag'
+        search_fields: ['tags_list.*.tag']
+        value_field: 'tags_list.*.tag'
         multiple: true
 
-      - { label: 'Project Link', name: 'project_link', widget: 'string' }
+      - {
+          label: 'Project Link',
+          name: 'project_link',
+          widget: 'string',
+          required: false,
+        }
       - {
           label: 'Project Repo',
           name: 'project_repo',
           widget: 'string',
           hint: 'The link to the repo',
+          required: false,
         }
       - {
           label: 'Thumbnail',
@@ -70,13 +78,18 @@ collections:
     label: 'Projects Tags'
     folder: 'content/projects_tags'
     format: 'frontmatter'
-    create: true
+    description: 'A list of the tags that can be assigned to the projects'
+    create: false
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    identifier_field: 'tag'
     editor:
       preview: false
     fields:
-      - { name: 'tag', label: 'Tag Name', widget: string }
+      - { name: 'title', label: 'Title', widget: 'string', default: 'My Tags' }
+      - name: 'tags_list'
+        label: 'Tags List'
+        widget: 'list'
+        fields:
+          - { name: 'tag', label: 'Tag Name', widget: string }
 
   # Resumes Collection
   - name: 'resume'
@@ -90,8 +103,8 @@ collections:
       preview: false
     fields:
       - { name: 'title', label: 'Title', widget: string, default: 'My Resumes' }
-      - label: 'Resumes'
-        name: 'resumes'
+      - label: 'Resumes List'
+        name: 'resumes_list'
         widget: 'list'
         hint: 'The resumes you want to show in you about page'
         fields:
@@ -140,12 +153,12 @@ collections:
           default: 'Texts that will go in the about page',
           hint: 'Do not change this',
         }
-      - { name: 'summarize', label: 'Summarize', widget: 'text' }
       - {
           label: 'Profile Pic',
           name: 'profile_pic',
           widget: 'image',
           allow_multiple: false,
+          required: false,
         }
       - label: 'Your skills'
         name: 'skills'
@@ -157,12 +170,7 @@ collections:
               widget: 'string',
               required: true,
             }
-      - {
-          name: 'body',
-          label: 'Description About You',
-          widget: 'markdown',
-          hint: 'Each paragraph must be inside this tags: <p class="text-muted mb-4"></p>',
-        }
+      - { name: 'body', label: 'Description About You', widget: 'markdown' }
 
   # Global Collection
   - name: 'global'
