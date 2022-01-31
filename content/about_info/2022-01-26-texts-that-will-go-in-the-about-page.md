@@ -13,16 +13,10 @@ skills:
   - text: Elementor
   - text: Woocommerce
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor dignissimos delectus minima reprehenderit molestias illo dolorem et, odio!
+Soy un desarrollador web, enfocado principalmente en el front-end (por los momentos 🧐), he sido el encargado de desarrollar webs profesionales para grande empresas dándoles así su presencia en la web. 
 
+Soy un solucionador de problemas, soy alguien que cree que gracias al internet puedes aprender a construir y desarrollar lo que quieras y lo digo porque es mi caso, todo lo que he aprendido ha sido por internet y ha sido posibles gracias a ser alguien autodidacta, organizado y disciplinado.
 
+Las tecnologías que he usado, no las usé haciendo un curso o viendo videos, las usé construyendo proyectos, porque en mi opinión es la mejora manera para aprender y entender como funciona una tecnología. La documentación es tu mejor amiga (a veces).
 
-Fuga fugit distinctio delectus iure vitae consequatur excepturi, mollitia, consectetur molestias sapiente rem consequuntur, illum adipisci, sed obcaecati!
-
-
-
-Ex, dolorem qui voluptas reprehenderit provident, ad ipsum iure a consequatur voluptatem incidunt nobis. Vitae reiciendis quae ex.
-
-
-
-Optio consectetur culpa nemo, fugit pariatur veniam voluptate laudantium rerum fuga dolor in maiores ea nisi voluptatibus. Minus?
+Espero que te haya gustado lo que has visto. Sí quieres que trabajemos juntos, no se has tímido y mándame un mensaje llenando el <NuxtLink to="/contact">formulario de contacto</NuxtLink>.
