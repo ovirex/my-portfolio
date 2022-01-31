@@ -13,10 +13,10 @@ skills:
   - text: Elementor
   - text: Woocommerce
 ---
-Soy un desarrollador web, enfocado principalmente en el front-end (por los momentos 🧐), he sido el encargado de desarrollar webs profesionales para grande empresas dándoles así su presencia en la web. 
+I'm a web developer, mainly focused on the front-end (for the moment 🧐), I've been in charge of developing professional websites for big companies giving them their presence on the web.
 
-Soy un solucionador de problemas, soy alguien que cree que gracias al internet puedes aprender a construir y desarrollar lo que quieras y lo digo porque es mi caso, todo lo que he aprendido ha sido por internet y ha sido posibles gracias a ser alguien autodidacta, organizado y disciplinado.
+I am a problem solver, I am someone who believes that thanks to the internet you can learn to build and develop whatever you want and I say this because it is my case, everything I have learned has been through the internet and it has been possible thanks to being self-taught, organized and disciplined.
 
-Las tecnologías que he usado, no las usé haciendo un curso o viendo videos, las usé construyendo proyectos, porque en mi opinión es la mejora manera para aprender y entender como funciona una tecnología. La documentación es tu mejor amiga (a veces).
+The technologies I have used, I didn't use them doing a course or watching videos, I used them building projects, because in my opinion is the best way to learn and understand how a technology works. Documentation is your best friend (sometimes).
 
-Espero que te haya gustado lo que has visto. Sí quieres que trabajemos juntos, no se has tímido y mándame un mensaje llenando el <NuxtLink to="/contact">formulario de contacto</NuxtLink>.
+I hope you liked what you have seen. If you want to work with me, don't be shy and send me a message by filling the <NuxtLink to="/contact">contact form</NuxtLink>.
