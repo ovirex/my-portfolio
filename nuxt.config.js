@@ -8,15 +8,37 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'my-portfolio',
+    title: 'Ovidio Pérez | Portfolio',
     htmlAttrs: {
       lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Web Developer, but mainly, a problem solver who will help you find a solutions to yours.',
+      },
       { name: 'format-detection', content: 'telephone=no' },
+      {
+        property: 'og:image',
+        content:
+          'https://res.cloudinary.com/dttbfql17/image/upload/v1643669343/link-photo_v9ly78.png',
+      },
+      {
+        property: 'og:image:width',
+        content: '400',
+      },
+      {
+        property: 'og:image:height',
+        content: '400',
+      },
+      {
+        name: 'robots',
+        content: 'all,follow',
+      },
     ],
     link: [
       {
