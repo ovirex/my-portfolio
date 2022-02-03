@@ -5,8 +5,8 @@
         <div class="col-md-6" data-aos="fade-up">
           <h2>About Me</h2>
           <p class="mb-0">
-            Here I’m gonna tell you a little about me, the tech I’ve worked with
-            and why hiring me would be the best decision of your life. 😉
+            Hello. In this page, we'll talk about what I do and how hiring me is
+            the best decision for your business. Shall we begin?
           </p>
         </div>
       </div>

@@ -13,10 +13,8 @@ skills:
   - text: Elementor
   - text: Woocommerce
 ---
-I'm a web developer, mainly focused on the front-end (for the moment 🧐), I've been in charge of developing professional websites for big companies giving them their presence on the web.
+I'm Ovidio Perez, web developer focused mainly in the front-end area (for the moment). With taste and focus on building solutions, as you can see in my project <NuxtLink to="/works/moG_M9wpKp-E">image link finder</NuxtLink>, I faced a problem, I developed a solution. I have worked developing professional websites for companies giving them an online presence, I have also been in charge of managing and supervising software development.
 
-I am a problem solver, I am someone who believes that thanks to the internet you can learn to build and develop whatever you want and I say this because it is my case, everything I have learned has been through the internet and it has been possible thanks to being self-taught, organized and disciplined.
+I really like the development of websites and software because of its thin barrier of limitations, if there is a problem there is a solution, and programming allows to create those solutions, whatever it is, most likely it is possible to build. Of course, always being willing to have the discipline and organization to learn constantly, as they say, being an "forever student", I stand by that.
 
-The technologies I have used, I didn't use them doing a course or watching videos, I used them building projects, because in my opinion is the best way to learn and understand how a technology works. Documentation is your best friend (sometimes).
-
-I hope you liked what you have seen. If you want to work with me, don't be shy and send me a message by filling the <NuxtLink to="/contact">contact form</NuxtLink>.
+I am currently working as a freelancer, but I am open to any interesting challenge or opportunity. If you are interested in contacting me, you can send me a message by filling out the <NuxtLink to="/contact">contact form</NuxtLink>.
