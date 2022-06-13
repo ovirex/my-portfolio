@@ -14,6 +14,6 @@ project_repo: https://github.com/ovirex/pomodoro-fcc
 thumbnail: https://res.cloudinary.com/dttbfql17/image/upload/v1655148272/pomodoro-fcc/pomodoro-clock_mx1nt1.gif
 project_images: https://res.cloudinary.com/dttbfql17/image/upload/v1655148272/pomodoro-fcc/pomodoro-clock_mx1nt1.gif
 ---
-A pomodoro clock using react. A good oportunity to make a good use of `setInterval()`. I add the option to set a specific number of pomos i.e. if you want to concentrate for 2 periods of 25 minutes, then you set 2 in number of pomos.
+A pomodoro clock using react. A good oportunity to make a good use of `setInterval()`. I add the option to set a specific number of pomos i.e. if you want to concentrate for 2 periods of 25 minutes, then you set 2 in 'number of pomos'.
 
 Once you start, you can see in which pomo you are currently. Pretty useful.
