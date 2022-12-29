@@ -4,6 +4,8 @@ title: Tu Amiga Psicóloga
 tech:
   - text: Wordpress
   - text: Elementor
+  - text: Javascript
+  - text: CSS
 project_tags:
   - Wordpress
 project_link: https://tuamigapsicologa.com/
