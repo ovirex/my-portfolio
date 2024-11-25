@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ovirex/my-portfolio
+  repo: ovirex/ovirex.github.io
   branch: master
 
 media_library:
