@@ -68,15 +68,6 @@ jobs:
       - name: Generate Static site
         run: npm run generate
 
-      - name: Debug repository URL
-        run: |
-          git config --get remote.origin.url
-
-      - name: Debug Permissions
-        run: |
-          echo "Actor: $GITHUB_ACTOR"
-          echo "Token: $GITHUB_TOKEN"
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
